@@ -1,8 +1,121 @@
-<html>
-	<head>
-		<title>Axiom Ventures</title>
-	</head>
-<body>
-	<h1>Axiom Ventures</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Axiom Ventures - Shaping the Future of SaaS</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+		rel="stylesheet">
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						dark: {
+							100: '#2C3E50',
+							200: '#1E2A3B',
+							300: '#0F172A',
+						}
+					},
+					fontFamily: {
+						'serif': ['"Playfair Display"', 'serif'],
+						'sans': ['Roboto', 'sans-serif'],
+					}
+				}
+			}
+		}
+	</script>
+	<style>
+		body {
+			background-image: radial-gradient(circle at top right, #1E2A3B, #0F172A);
+		}
+	</style>
+</head>
+
+<body class="bg-dark-300 text-gray-100 font-sans min-h-screen flex flex-col">
+	<div class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+		<header class="py-6">
+			<nav class="flex justify-between items-center">
+				<div class="text-2xl font-serif font-bold text-indigo-300">Axiom Ventures</div>
+				<div class="space-x-4">
+					<a href="mailto:info@axiom.lk"
+						class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Contact</a>
+				</div>
+			</nav>
+		</header>
+
+		<main class="py-12">
+			<section class="text-center mb-16">
+				<h1 class="text-5xl font-serif font-bold mb-4 text-indigo-200">We solve problems.</h1>
+				<p class="text-xl text-gray-400 mb-8 font-light">Axiom Ventures is a boutique provider of innovative
+					SaaS solutions.</p>
+			</section>
+
+			<section class="mb-16">
+				<h2 class="text-3xl font-serif font-bold text-center mb-10 text-indigo-200">What Sets Us Apart</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="text-center">
+						<div
+							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-indigo-200">Innovation</h3>
+						<p class="text-gray-400 font-light">Reimagining SaaS from the ground up, focused on solving real
+							world problems</p>
+					</div>
+					<div class="text-center">
+						<div
+							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+								</path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-indigo-200">Pragmatic Tech</h3>
+						<p class="text-gray-400 font-light">Leveraging the latest advancements pragmatically to solve
+							problems with a lean technology footprint</p>
+					</div>
+					<div class="text-center">
+						<div
+							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+								</path>
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold mb-2 text-indigo-200">User-Centric Design</h3>
+						<p class="text-gray-400 font-light">Focus on intuitive experiences and user journeys that are
+							a pleasure to work with</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="bg-indigo-900/30 rounded-lg p-8 text-center">
+				<h2 class="text-3xl font-serif font-bold mb-4 text-indigo-200">Let's connect and collaborate</h2>
+				<button onclick="window.location.href='mailto:info@axiom.lk'"
+					class="bg-indigo-600 text-white px-6 py-2 rounded-md text-lg hover:bg-indigo-700 transition duration-300">
+					Contact
+				</button>
+			</section>
+		</main>
+	</div>
+
+	<footer class="mt-12 py-6 text-center text-gray-400">
+		<div class="container mx-auto px-4">
+			<div class="text-sm">&copy; 2024 Axiom Ventures. All rights reserved.</div>
+		</div>
+	</footer>
 </body>
+
 </html>
