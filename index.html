@@ -1,121 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Axiom Ventures: We solve problems.</title>
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-		rel="stylesheet">
-	<script>
-		tailwind.config = {
-			theme: {
-				extend: {
-					colors: {
-						dark: {
-							100: '#2C3E50',
-							200: '#1E2A3B',
-							300: '#0F172A',
-						}
-					},
-					fontFamily: {
-						'serif': ['"Playfair Display"', 'serif'],
-						'sans': ['Roboto', 'sans-serif'],
-					}
-				}
-			}
-		}
-	</script>
-	<style>
-		body {
-			background-image: radial-gradient(circle at top right, #1E2A3B, #0F172A);
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axiom Ventures: creating enduring business worth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            axiom: {
+              purple: '#9b87f5',
+              dark: '#121420',
+              darker: '#0a0b14',
+              gray: '#8E9196'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0a0b14;
+    }
+    
+    .hero-gradient {
+      background: radial-gradient(circle at 50% 50%, rgba(155, 135, 245, 0.15) 0%, rgba(10, 11, 20, 0) 50%);
+    }
+
+    .feature-icon {
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+    
+    .feature:hover .feature-icon {
+      transform: translateY(-5px);
+      opacity: 1;
+    }
+    
+    .contact-btn {
+      transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    }
+    
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(155, 135, 245, 0.4);
+    }
+    
+    .logo-text {
+      text-transform: uppercase;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+  </style>
 </head>
+<body class="font-sans text-white">
+  <!-- Header -->
+  <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <h1 class="text-axiom-purple text-2xl md:text-3xl font-montserrat logo-text">Axiom Ventures</h1>
+    </div>
+    <a 
+      href="https://forms.gle/NgmvrRW3zUPWocS17" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="contact-btn bg-axiom-purple hover:bg-opacity-90 text-white px-6 py-2 rounded-md font-medium"
+    >
+      Contact
+    </a>
+  </header>
 
-<body class="bg-dark-300 text-gray-100 font-sans min-h-screen flex flex-col">
-	<div class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-		<header class="py-6">
-			<nav class="flex justify-between items-center">
-				<div class="text-2xl font-serif font-bold text-indigo-300">Axiom Ventures</div>
-				<div class="space-x-4">
-					<a href="mailto:info@axiom.lk"
-						class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Contact</a>
-				</div>
-			</nav>
-		</header>
+  <!-- Hero Section -->
+  <section class="hero-gradient container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center">
+    <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl leading-tight">
+      Our core: the creation of enduring business worth
+    </h2>
+    <p class="text-lg md:text-xl text-axiom-gray max-w-2xl mb-10">
+      Axiom Ventures operates at the intersection of innovation and practicality, creating technological solutions that redefine possibilities.
+    </p>
+  </section>
 
-		<main class="py-12">
-			<section class="text-center mb-16">
-				<h1 class="text-5xl font-serif font-bold mb-4 text-indigo-200">We solve problems.</h1>
-				<p class="text-xl text-gray-400 mb-8 font-light">Axiom Ventures is a boutique provider of innovative
-					SaaS solutions.</p>
-			</section>
+  <!-- Features Section -->
+  <section class="container mx-auto px-4 py-20">
+    <h3 class="text-2xl md:text-3xl font-semibold text-center mb-20">What Drives Us</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Feature 1 -->
+      <div class="feature flex flex-col items-center text-center group">
+        <div class="feature-icon bg-axiom-darker p-6 rounded-full mb-6 opacity-80">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-axiom-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">First Principles Thinking</h4>
+        <p class="text-axiom-gray">
+          We break down complex problems to their fundamental truths and build solutions from the ground up.
+        </p>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="feature flex flex-col items-center text-center group">
+        <div class="feature-icon bg-axiom-darker p-6 rounded-full mb-6 opacity-80">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-axiom-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 2v7.31"></path>
+            <path d="M14 9.3V1.99"></path>
+            <path d="M8.5 2h7"></path>
+            <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
+            <path d="M5.58 16.5h12.85"></path>
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">Intentional Simplicity</h4>
+        <p class="text-axiom-gray">
+          We create solutions that embody clarity and purpose, eliminating complexity without sacrificing power or capability.
+        </p>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="feature flex flex-col items-center text-center group">
+        <div class="feature-icon bg-axiom-darker p-6 rounded-full mb-6 opacity-80">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-axiom-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 1 0 7.75"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h4 class="text-xl font-semibold mb-3">Impact-Focused</h4>
+        <p class="text-axiom-gray">
+          We develop solutions with real human outcomes in mind, ensuring technology serves people rather than the other way around.
+        </p>
+      </div>
+    </div>
+  </section>
 
-			<section class="mb-16">
-				<h2 class="text-3xl font-serif font-bold text-center mb-10 text-indigo-200">What Sets Us Apart</h2>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<div class="text-center">
-						<div
-							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold mb-2 text-indigo-200">Innovation</h3>
-						<p class="text-gray-400 font-light">Reimagining SaaS from the ground up, focused on solving real
-							world problems</p>
-					</div>
-					<div class="text-center">
-						<div
-							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
-								</path>
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold mb-2 text-indigo-200">Pragmatic Tech</h3>
-						<p class="text-gray-400 font-light">Leveraging the latest advancements pragmatically to solve
-							problems with a lean technology footprint</p>
-					</div>
-					<div class="text-center">
-						<div
-							class="bg-indigo-900/50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-							<svg class="w-8 h-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
-								</path>
-							</svg>
-						</div>
-						<h3 class="text-xl font-semibold mb-2 text-indigo-200">User-Centric Design</h3>
-						<p class="text-gray-400 font-light">Focus on intuitive experiences and user journeys that are
-							a pleasure to work with</p>
-					</div>
-				</div>
-			</section>
+  <!-- CTA Section -->
+  <section class="bg-axiom-dark py-20 mt-20">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl md:text-4xl font-bold mb-8">Ready to explore what's possible?</h3>
+      <a 
+        href="https://forms.gle/NgmvrRW3zUPWocS17" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="contact-btn bg-axiom-purple hover:bg-opacity-90 text-white px-8 py-3 rounded-md font-medium inline-block"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </section>
 
-			<section class="bg-indigo-900/30 rounded-lg p-8 text-center">
-				<h2 class="text-3xl font-serif font-bold mb-4 text-indigo-200">Let's connect and collaborate</h2>
-				<button onclick="window.location.href='mailto:info@axiom.lk'"
-					class="bg-indigo-600 text-white px-6 py-2 rounded-md text-lg hover:bg-indigo-700 transition duration-300">
-					Contact
-				</button>
-			</section>
-		</main>
-	</div>
+  <!-- Footer -->
+  <footer class="container mx-auto px-4 py-10">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="text-axiom-gray mb-4 md:mb-0">© 2025 Axiom Ventures. All rights reserved.</p>
+    </div>
+  </footer>
 
-	<footer class="mt-12 py-6 text-center text-gray-400">
-		<div class="container mx-auto px-4">
-			<div class="text-sm">&copy; 2024 Axiom Ventures. All rights reserved.</div>
-		</div>
-	</footer>
+  <script>
+    // Simple parallax effect on scroll
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const heroSection = document.querySelector('.hero-gradient');
+      if (heroSection) {
+        heroSection.style.backgroundPosition = `50% ${50 + scrollPosition * 0.05}%`;
+      }
+    });
+  </script>
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 </body>
-
 </html>
